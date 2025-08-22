@@ -1326,3 +1326,68 @@
 |:heavy_check_mark:   | 25054| Debt of Blood
 |:heavy_check_mark:   | 25055| Suppressing Fire
 |:heavy_check_mark:   | 25056| Any Port in a Storm
+
+## `18-WoW` War of Whispers
+
+| Status | Code | Title                    |
+|--------|-----:|:------------------------:|
+|:heavy_check_mark:   | 26001| Fort 51
+|:heavy_check_mark:   | 26002| Wong Fee Lee
+|:heavy_check_mark:   | 26003| Mr. Outang (Exp. 1)
+|:heavy_check_mark:   | 26004| Piotr
+|:heavy_check_mark:   | 26005| Pianogeist
+|:heavy_check_mark:   | 26006| Sterling Chan
+|:heavy_check_mark:   | 26007| Delores "Dolly" Lassiter
+|                     | 26008| Dr. Dwight Shelton
+|                     | 26009| Noah & Jonah Whateley
+|                     | 26010| The Grave Gunslinger
+|                     | 26011| Gabrielle Perivale
+|                     | 26012| The Resurrectionist
+|                     | 26013| Jett Can Cega
+|                     | 26014| Fire-Dancer
+|                     | 26015| Mahpiya Violet
+|                     | 26016| "Uncle" Howard Bearclaw
+|                     | 26017| Rafi Hamid (Exp. 1)
+|                     | 26018| Iris Jarvis
+|                     | 26019| Nat Wright
+|                     | 26020| Petunia Mallard
+|                     | 26021| Mateo Suarez
+|                     | 26022| Abigail Lloyd
+|                     | 26023| Harry Highbinder
+|                     | 26024| Len Nuanez
+|                     | 26025| Tsurugi
+|                     | 26026| Blind Mary
+|                     | 26027| Calamity Jane
+|                     | 26028| Doris Powell
+|                     | 26029| Red Tears
+|                     | 26030| Empire Bakery
+|                     | 26031| Bai Long Tea Shop
+|                     | 26032| Dr. Babcock's Office
+|                     | 26033| Scout's Rest Ranch
+|                     | 26034| Langrishe Theater
+|                     | 26035| Iron Dragon Regional Office
+|                     | 26036| Wong's Bazaar
+|                     | 26037| Sunday Best
+|                     | 26038| Guandao
+|                     | 26039| Steel Swarm
+|                     | 26040| Log-o-Matic
+|                     | 26041| Penny Farthing
+|                     | 26042| Negentropic Pylon
+|                     | 26043| The Royals' Hoyle
+|                     | 26044| Dingler's Dirigible
+|                     | 26045| Clear Out!
+|                     | 26046| Alone in the Dark
+|                     | 26047| Chastise
+|                     | 26048| Strength of Fellowship
+|                     | 26049| Vengeful Pack
+|                     | 26050| Bones of the Earth
+|                     | 26051| Inner Struggle
+|                     | 26052| Hickok's Revenge
+|                     | 26053| On the Lam
+|                     | 26054| My Horse Don't Like Ya, Either
+|                     | 26055| I'll Cover Yer Backs!
+|                     | 26056| Unexpected Allies
+|                     | 26057| Facing Yer Demons
+|                     | 26058| STAMPEDE!
+|                     | 26059| Against the Odds
+|                     | 26060| Stand Together
