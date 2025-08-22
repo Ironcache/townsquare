@@ -15,10 +15,10 @@ class JettCanCega extends DudeCard {
                     condition: card => card.isInOpposingPosse() && !card.booted
                 }
             },
-            message: context => 
-                this.game.addMessage('{0} uses {1} to boot {2} as he leaves the posse.', context.player, this, context.target),
             handler: context => {
-                this.game.resolveGameAction(GameActions.bootCard({ card: context.target }), context);
+                this.game.resolveGameAction(GameActions.bootCard({ card: context.target }), context).thenExecute(() => {
+                    this.game.addMessage('{0} uses {1} to boot {2} as he leaves the posse.', context.player, this, context.target);
+                })
             }
         });
     }

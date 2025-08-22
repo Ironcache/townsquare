@@ -1344,9 +1344,9 @@
 |:heavy_check_mark:   | 26011| Gabrielle Perivale
 |:heavy_check_mark:   | 26012| The Resurrectionist
 |:heavy_check_mark:   | 26013| Jett Can Cega
-|                     | 26014| Fire-Dancer
-|                     | 26015| Mahpiya Violet
-|                     | 26016| "Uncle" Howard Bearclaw
+|:heavy_check_mark:   | 26014| Fire-Dancer
+|:heavy_check_mark:   | 26015| Mahpiya Violet
+|:heavy_check_mark:   | 26016| "Uncle" Howard Bearclaw
 |                     | 26017| Rafi Hamid (Exp. 1)
 |                     | 26018| Iris Jarvis
 |                     | 26019| Nat Wright
