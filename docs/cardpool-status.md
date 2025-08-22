@@ -1338,12 +1338,12 @@
 |:heavy_check_mark:   | 26005| Pianogeist
 |:heavy_check_mark:   | 26006| Sterling Chan
 |:heavy_check_mark:   | 26007| Delores "Dolly" Lassiter
-|                     | 26008| Dr. Dwight Shelton
-|                     | 26009| Noah & Jonah Whateley
-|                     | 26010| The Grave Gunslinger
-|                     | 26011| Gabrielle Perivale
-|                     | 26012| The Resurrectionist
-|                     | 26013| Jett Can Cega
+|:heavy_check_mark:   | 26008| Dr. Dwight Shelton
+|:heavy_check_mark:   | 26009| Noah & Jonah Whateley
+|:heavy_check_mark:   | 26010| The Grave Gunslinger
+|:heavy_check_mark:   | 26011| Gabrielle Perivale
+|:heavy_check_mark:   | 26012| The Resurrectionist
+|:heavy_check_mark:   | 26013| Jett Can Cega
 |                     | 26014| Fire-Dancer
 |                     | 26015| Mahpiya Violet
 |                     | 26016| "Uncle" Howard Bearclaw
