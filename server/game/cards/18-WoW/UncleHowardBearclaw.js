@@ -7,7 +7,8 @@ class UncleHowardBearclaw extends DudeCard {
             title: '"Uncle" Howard Bearclaw',
             playType: 'noon',
             target: {
-                activePromptTitle: 'Select an Out-Of-Town deed to move to.',
+                activePromptTitle: 'Select an Out of Town deed to move to.',
+                location: 'play area',
                 cardCondition: { condition: card => card.hasKeyword('out of town') },
                 cardType: 'deed'
             },

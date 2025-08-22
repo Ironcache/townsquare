@@ -1347,10 +1347,10 @@
 |:heavy_check_mark:   | 26014| Fire-Dancer
 |:heavy_check_mark:   | 26015| Mahpiya Violet
 |:heavy_check_mark:   | 26016| "Uncle" Howard Bearclaw
-|                     | 26017| Rafi Hamid (Exp. 1)
-|                     | 26018| Iris Jarvis
-|                     | 26019| Nat Wright
-|                     | 26020| Petunia Mallard
+|:heavy_check_mark:   | 26017| Rafi Hamid (Exp. 1)
+|:heavy_check_mark:   | 26018| Iris Jarvis
+|:heavy_check_mark:   | 26019| Nat Wright
+|:heavy_check_mark:   | 26020| Petunia Mallard
 |                     | 26021| Mateo Suarez
 |                     | 26022| Abigail Lloyd
 |                     | 26023| Harry Highbinder
