@@ -1361,11 +1361,11 @@
 |:heavy_check_mark:   | 26027| Calamity Jane
 |:heavy_check_mark:   | 26028| Doris Powell
 |:heavy_check_mark:   | 26029| Red Tears
-|                     | 26030| Empire Bakery
-|                     | 26031| Bai Long Tea Shop
-|                     | 26032| Dr. Babcock's Office
-|                     | 26033| Scout's Rest Ranch
-|                     | 26034| Langrishe Theater
+|:heavy_check_mark:   | 26030| Empire Bakery
+|:heavy_check_mark:   | 26031| Bai Long Tea Shop
+|:heavy_check_mark:   | 26032| Dr. Babcock's Office
+|:heavy_check_mark:   | 26033| Scout's Rest Ranch
+|:heavy_check_mark:   | 26034| Langrishe Theater
 |                     | 26035| Iron Dragon Regional Office
 |                     | 26036| Wong's Bazaar
 |                     | 26037| Sunday Best
