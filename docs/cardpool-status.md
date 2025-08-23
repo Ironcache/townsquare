@@ -1328,6 +1328,7 @@
 |:heavy_check_mark:   | 25056| Any Port in a Storm
 
 ## `18-WoW` War of Whispers
+(I've used :white_check_mark: to mean partial implementations, in this section.)
 
 | Status | Code | Title                    |
 |--------|-----:|:------------------------:|
@@ -1351,15 +1352,15 @@
 |:heavy_check_mark:   | 26018| Iris Jarvis
 |:heavy_check_mark:   | 26019| Nat Wright
 |:heavy_check_mark:   | 26020| Petunia Mallard
-|                     | 26021| Mateo Suarez
-|                     | 26022| Abigail Lloyd
-|                     | 26023| Harry Highbinder
-|                     | 26024| Len Nuanez
-|                     | 26025| Tsurugi
-|                     | 26026| Blind Mary
-|                     | 26027| Calamity Jane
-|                     | 26028| Doris Powell
-|                     | 26029| Red Tears
+|:heavy_check_mark:   | 26021| Mateo Suarez
+|:heavy_check_mark:   | 26022| Abigail Lloyd
+|:white_check_mark:   | 26023| Harry Highbinder (Only has Sundown CP; no TS control, nor "check" logic.)
+|:white_check_mark:   | 26024| Len Nuanez (LD-only start, ATM.  Also need to combine the reacts together into 1 choice menu.)
+|:heavy_check_mark:   | 26025| Tsurugi
+|:heavy_check_mark:   | 26026| Blind Mary
+|:heavy_check_mark:   | 26027| Calamity Jane
+|:heavy_check_mark:   | 26028| Doris Powell
+|:heavy_check_mark:   | 26029| Red Tears
 |                     | 26030| Empire Bakery
 |                     | 26031| Bai Long Tea Shop
 |                     | 26032| Dr. Babcock's Office
