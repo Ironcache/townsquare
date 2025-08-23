@@ -1366,8 +1366,8 @@
 |:heavy_check_mark:   | 26032| Dr. Babcock's Office
 |:heavy_check_mark:   | 26033| Scout's Rest Ranch
 |:heavy_check_mark:   | 26034| Langrishe Theater
-|                     | 26035| Iron Dragon Regional Office
-|                     | 26036| Wong's Bazaar
+|:heavy_check_mark:   | 26035| Iron Dragon Regional Office
+|:heavy_check_mark:   | 26036| Wong's Bazaar
 |                     | 26037| Sunday Best
 |                     | 26038| Guandao
 |                     | 26039| Steel Swarm
