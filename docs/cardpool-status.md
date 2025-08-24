@@ -1373,7 +1373,7 @@
 |:heavy_check_mark:   | 26039| Steel Swarm
 |:heavy_check_mark:   | 26040| Log-o-Matic
 |:heavy_check_mark:   | 26041| Penny Farthing
-|                     | 26042| Negentropic Pylon
+|:heavy_check_mark:   | 26042| Negentropic Pylon
 |                     | 26043| The Royals' Hoyle
 |                     | 26044| Dingler's Dirigible
 |                     | 26045| Clear Out!
