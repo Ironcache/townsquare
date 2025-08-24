@@ -1372,7 +1372,7 @@
 |:heavy_check_mark:   | 26038| Guandao
 |:heavy_check_mark:   | 26039| Steel Swarm
 |:heavy_check_mark:   | 26040| Log-o-Matic
-|                     | 26041| Penny Farthing
+|:heavy_check_mark:   | 26041| Penny Farthing
 |                     | 26042| Negentropic Pylon
 |                     | 26043| The Royals' Hoyle
 |                     | 26044| Dingler's Dirigible
