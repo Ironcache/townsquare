@@ -1369,7 +1369,7 @@
 |:heavy_check_mark:   | 26035| Iron Dragon Regional Office
 |:heavy_check_mark:   | 26036| Wong's Bazaar
 |:heavy_check_mark:   | 26037| Sunday Best
-|                     | 26038| Guandao
+|:heavy_check_mark:   | 26038| Guandao
 |                     | 26039| Steel Swarm
 |                     | 26040| Log-o-Matic
 |                     | 26041| Penny Farthing
