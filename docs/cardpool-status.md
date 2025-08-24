@@ -1368,7 +1368,7 @@
 |:heavy_check_mark:   | 26034| Langrishe Theater
 |:heavy_check_mark:   | 26035| Iron Dragon Regional Office
 |:heavy_check_mark:   | 26036| Wong's Bazaar
-|                     | 26037| Sunday Best
+|:heavy_check_mark:   | 26037| Sunday Best
 |                     | 26038| Guandao
 |                     | 26039| Steel Swarm
 |                     | 26040| Log-o-Matic

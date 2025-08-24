@@ -12,14 +12,14 @@ class HarryHighbinder2 extends DudeCard {
         // This is a half-way hack; it gives the dude with the highest influential party in TS a CP, but not control.
         // Sorry Totem Bros.
         this.persistentEffect({
-            condition: () => this.game.currentPhase === PhaseNames.Sundown && this.gamelocation === this.game.townsquare.uuid &&
-                this.playerControlsTownSquare(),
+            condition: () => this.isInTownSquare() && this.game.currentPhase === PhaseNames.Sundown &&
+                this.gamelocation === this.game.townsquare.uuid && this.playerControlsTownSquare(),
             match: this.controller,
             effect: ability.effects.modifyPlayerControl(1)
         });
         this.persistentEffect({
-            condition: () => this.game.currentPhase === PhaseNames.Sundown && this.gamelocation === this.game.townsquare.uuid &&
-                this.opponentControlsTownSquare(),
+            condition: () => this.isInTownSquare() && this.game.currentPhase === PhaseNames.Sundown &&
+                this.gamelocation === this.game.townsquare.uuid && this.opponentControlsTownSquare(),
             match: this.controller.getOpponent(),
             effect: ability.effects.modifyPlayerControl(1)
         });
