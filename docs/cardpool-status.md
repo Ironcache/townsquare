@@ -1370,7 +1370,7 @@
 |:heavy_check_mark:   | 26036| Wong's Bazaar
 |:heavy_check_mark:   | 26037| Sunday Best
 |:heavy_check_mark:   | 26038| Guandao
-|                     | 26039| Steel Swarm
+|:heavy_check_mark:   | 26039| Steel Swarm
 |                     | 26040| Log-o-Matic
 |                     | 26041| Penny Farthing
 |                     | 26042| Negentropic Pylon
