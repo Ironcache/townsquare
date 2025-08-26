@@ -337,9 +337,10 @@ module.exports.init = function(server, options) {
             return res.send({ success: false, message: 'Invalid username/password' });
         }
 
-        if(!user.verified) {
-            return res.send({ success: false, message: 'You must verifiy your account before trying to log in' });
-        }
+        // TODO: SendGrid broken; removing verification requirement until a functional identity solution is restored.
+        // if(!user.verified) {
+        //     return res.send({ success: false, message: 'You must verifiy your account before trying to log in' });
+        // }
 
         let userObj = user.getWireSafeDetails();
         userObj.discord.server = configService.getValue('discordServer');
