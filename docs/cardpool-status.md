@@ -1388,7 +1388,7 @@
 |:heavy_check_mark:   | 26054| My Horse Don't Like Ya, Either
 |:heavy_check_mark:   | 26055| I'll Cover Yer Backs!
 |:heavy_check_mark:   | 26056| Unexpected Allies
-|                     | 26057| Facing Yer Demons
+|:white_check_mark:   | 26057| Facing Yer Demons (Callout cost increase currently unimplemented)
 |                     | 26058| STAMPEDE!
 |                     | 26059| Against the Odds
 |                     | 26060| Stand Together
