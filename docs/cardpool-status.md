@@ -1381,7 +1381,7 @@
 |:heavy_check_mark:   | 26047| Chastise
 |:heavy_check_mark:   | 26048| Strength of Fellowship
 |:heavy_check_mark:   | 26049| Vengeful Pack
-|                     | 26050| Bones of the Earth
+|:heavy_check_mark:   | 26050| Bones of the Earth
 |                     | 26051| Inner Struggle
 |                     | 26052| Hickok's Revenge
 |                     | 26053| On the Lam
