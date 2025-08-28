@@ -1379,7 +1379,7 @@
 |:heavy_check_mark:   | 26045| Clear Out!
 |:white_check_mark:   | 26046| Alone in the Dark (Need to properly handle all dudes affected)
 |:heavy_check_mark:   | 26047| Chastise
-|                     | 26048| Strength of Fellowship
+|:heavy_check_mark:   | 26048| Strength of Fellowship
 |                     | 26049| Vengeful Pack
 |                     | 26050| Bones of the Earth
 |                     | 26051| Inner Struggle
