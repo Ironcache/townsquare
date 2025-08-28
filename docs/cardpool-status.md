@@ -1383,7 +1383,7 @@
 |:heavy_check_mark:   | 26049| Vengeful Pack
 |:heavy_check_mark:   | 26050| Bones of the Earth
 |:heavy_check_mark:   | 26051| Inner Struggle
-|                     | 26052| Hickok's Revenge
+|:heavy_check_mark:   | 26052| Hickok's Revenge
 |                     | 26053| On the Lam
 |                     | 26054| My Horse Don't Like Ya, Either
 |                     | 26055| I'll Cover Yer Backs!
