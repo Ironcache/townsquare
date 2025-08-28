@@ -1375,7 +1375,7 @@
 |:heavy_check_mark:   | 26041| Penny Farthing
 |:heavy_check_mark:   | 26042| Negentropic Pylon
 |:heavy_check_mark:   | 26043| The Royals' Hoyle
-|                     | 26044| Dingler's Dirigible
+|:heavy_check_mark:   | 26044| Dingler's Dirigible
 |                     | 26045| Clear Out!
 |                     | 26046| Alone in the Dark
 |                     | 26047| Chastise
