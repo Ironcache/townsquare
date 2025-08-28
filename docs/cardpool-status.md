@@ -1355,7 +1355,7 @@
 |:heavy_check_mark:   | 26021| Mateo Suarez
 |:heavy_check_mark:   | 26022| Abigail Lloyd
 |:white_check_mark:   | 26023| Harry Highbinder (Only has Sundown CP; no TS control, nor "check" logic.)
-|:white_check_mark:   | 26024| Len Nuanez (LD-only start, ATM.  Also need to combine the reacts together into 1 choice menu.)
+|:white_check_mark:   | 26024| Len Nuanez (LD-dude, ATM.  Also need to combine the reacts together into 1 choice menu.)
 |:heavy_check_mark:   | 26025| Tsurugi
 |:heavy_check_mark:   | 26026| Blind Mary
 |:heavy_check_mark:   | 26027| Calamity Jane
@@ -1377,7 +1377,7 @@
 |:heavy_check_mark:   | 26043| The Royals' Hoyle
 |:heavy_check_mark:   | 26044| Dingler's Dirigible
 |:heavy_check_mark:   | 26045| Clear Out!
-|                     | 26046| Alone in the Dark
+|:white_check_mark:   | 26046| Alone in the Dark (Need to properly handle all dudes affected)
 |                     | 26047| Chastise
 |                     | 26048| Strength of Fellowship
 |                     | 26049| Vengeful Pack
