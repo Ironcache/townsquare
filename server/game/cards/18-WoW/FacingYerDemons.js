@@ -1,6 +1,4 @@
 const ActionCard = require('../../actioncard.js');
-const GameActions = require('../../GameActions/index.js');
-const ShootoutStatuses = require('../../Constants/ShootoutStatuses.js');
 /** @typedef {import('../../AbilityDsl')} AbilityDsl */
 
 class FacingYerDemons extends ActionCard {
