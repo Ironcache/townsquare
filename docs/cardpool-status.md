@@ -1376,7 +1376,7 @@
 |:heavy_check_mark:   | 26042| Negentropic Pylon
 |:heavy_check_mark:   | 26043| The Royals' Hoyle
 |:heavy_check_mark:   | 26044| Dingler's Dirigible
-|                     | 26045| Clear Out!
+|:heavy_check_mark:   | 26045| Clear Out!
 |                     | 26046| Alone in the Dark
 |                     | 26047| Chastise
 |                     | 26048| Strength of Fellowship
