@@ -1385,7 +1385,7 @@
 |:heavy_check_mark:   | 26051| Inner Struggle
 |:heavy_check_mark:   | 26052| Hickok's Revenge
 |:heavy_check_mark:   | 26053| On the Lam
-|                     | 26054| My Horse Don't Like Ya, Either
+|:heavy_check_mark:   | 26054| My Horse Don't Like Ya, Either
 |                     | 26055| I'll Cover Yer Backs!
 |                     | 26056| Unexpected Allies
 |                     | 26057| Facing Yer Demons
