@@ -5,7 +5,8 @@ class InnerStruggle extends ActionCard {
     setupCardAbilities(ability) {
         this.traitReaction({
             when: {
-                onDrawHandsRevealed: () => this.parent && this.parent.controller.isCheatin() && !this.owner.isCheatin() && !this.booted
+                onDrawHandsRevealed: () => this.parent && this.parent.controller.isCheatin() &&
+                    !this.owner.isCheatin() && !this.booted && (this.bootOutsideShootout() || this.game.shootout)
             },
             location: 'play area',
             ignoreActionCosts: true,
@@ -41,6 +42,10 @@ class InnerStruggle extends ActionCard {
                 });
             }
         });
+    }
+
+    bootOutsideShootout() {
+        return true;
     }
 }
 

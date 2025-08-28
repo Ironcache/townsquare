@@ -1326,3 +1326,69 @@
 |:heavy_check_mark:   | 25054| Debt of Blood
 |:heavy_check_mark:   | 25055| Suppressing Fire
 |:heavy_check_mark:   | 25056| Any Port in a Storm
+
+## `18-WoW` War of Whispers
+(I've used :white_check_mark: to mean partial implementations, in this section.)
+
+| Status | Code | Title                    |
+|--------|-----:|:------------------------:|
+|:heavy_check_mark:   | 26001| Fort 51
+|:heavy_check_mark:   | 26002| Wong Fee Lee
+|:heavy_check_mark:   | 26003| Mr. Outang (Exp. 1)
+|:heavy_check_mark:   | 26004| Piotr
+|:heavy_check_mark:   | 26005| Pianogeist
+|:heavy_check_mark:   | 26006| Sterling Chan
+|:heavy_check_mark:   | 26007| Delores "Dolly" Lassiter
+|:heavy_check_mark:   | 26008| Dr. Dwight Shelton
+|:heavy_check_mark:   | 26009| Noah & Jonah Whateley
+|:heavy_check_mark:   | 26010| The Grave Gunslinger
+|:heavy_check_mark:   | 26011| Gabrielle Perivale
+|:heavy_check_mark:   | 26012| The Resurrectionist
+|:heavy_check_mark:   | 26013| Jett Can Cega
+|:heavy_check_mark:   | 26014| Fire-Dancer
+|:heavy_check_mark:   | 26015| Mahpiya Violet
+|:heavy_check_mark:   | 26016| "Uncle" Howard Bearclaw
+|:heavy_check_mark:   | 26017| Rafi Hamid (Exp. 1)
+|:heavy_check_mark:   | 26018| Iris Jarvis
+|:heavy_check_mark:   | 26019| Nat Wright
+|:heavy_check_mark:   | 26020| Petunia Mallard
+|:heavy_check_mark:   | 26021| Mateo Suarez
+|:heavy_check_mark:   | 26022| Abigail Lloyd
+|:white_check_mark:   | 26023| Harry Highbinder (Only has Sundown CP; no TS control, nor "check" logic.)
+|:white_check_mark:   | 26024| Len Nuanez (LD-dude, ATM.  Also need to combine the reacts together into 1 choice menu.)
+|:heavy_check_mark:   | 26025| Tsurugi
+|:heavy_check_mark:   | 26026| Blind Mary
+|:heavy_check_mark:   | 26027| Calamity Jane
+|:heavy_check_mark:   | 26028| Doris Powell
+|:heavy_check_mark:   | 26029| Red Tears
+|:heavy_check_mark:   | 26030| Empire Bakery
+|:heavy_check_mark:   | 26031| Bai Long Tea Shop
+|:heavy_check_mark:   | 26032| Dr. Babcock's Office
+|:heavy_check_mark:   | 26033| Scout's Rest Ranch
+|:heavy_check_mark:   | 26034| Langrishe Theater
+|:heavy_check_mark:   | 26035| Iron Dragon Regional Office
+|:heavy_check_mark:   | 26036| Wong's Bazaar
+|:heavy_check_mark:   | 26037| Sunday Best
+|:heavy_check_mark:   | 26038| Guandao
+|:heavy_check_mark:   | 26039| Steel Swarm
+|:heavy_check_mark:   | 26040| Log-o-Matic
+|:heavy_check_mark:   | 26041| Penny Farthing
+|:heavy_check_mark:   | 26042| Negentropic Pylon
+|:heavy_check_mark:   | 26043| The Royals' Hoyle
+|:heavy_check_mark:   | 26044| Dingler's Dirigible
+|:heavy_check_mark:   | 26045| Clear Out!
+|:white_check_mark:   | 26046| Alone in the Dark (Need to properly handle all dudes affected)
+|:heavy_check_mark:   | 26047| Chastise
+|:heavy_check_mark:   | 26048| Strength of Fellowship
+|:heavy_check_mark:   | 26049| Vengeful Pack
+|:heavy_check_mark:   | 26050| Bones of the Earth
+|:heavy_check_mark:   | 26051| Inner Struggle
+|:heavy_check_mark:   | 26052| Hickok's Revenge
+|:heavy_check_mark:   | 26053| On the Lam
+|:heavy_check_mark:   | 26054| My Horse Don't Like Ya, Either
+|:heavy_check_mark:   | 26055| I'll Cover Yer Backs!
+|:heavy_check_mark:   | 26056| Unexpected Allies
+|:white_check_mark:   | 26057| Facing Yer Demons (Callout cost increase currently unimplemented)
+|:white_check_mark:   | 26058| STAMPEDE! (Town Square adjacency effect unimplemented)
+|:heavy_check_mark:   | 26059| Against the Odds
+|:heavy_check_mark:   | 26060| Stand Together
