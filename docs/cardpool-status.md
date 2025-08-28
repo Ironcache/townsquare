@@ -1387,7 +1387,7 @@
 |:heavy_check_mark:   | 26053| On the Lam
 |:heavy_check_mark:   | 26054| My Horse Don't Like Ya, Either
 |:heavy_check_mark:   | 26055| I'll Cover Yer Backs!
-|                     | 26056| Unexpected Allies
+|:heavy_check_mark:   | 26056| Unexpected Allies
 |                     | 26057| Facing Yer Demons
 |                     | 26058| STAMPEDE!
 |                     | 26059| Against the Odds
