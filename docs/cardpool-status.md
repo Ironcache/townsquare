@@ -1382,7 +1382,7 @@
 |:heavy_check_mark:   | 26048| Strength of Fellowship
 |:heavy_check_mark:   | 26049| Vengeful Pack
 |:heavy_check_mark:   | 26050| Bones of the Earth
-|                     | 26051| Inner Struggle
+|:heavy_check_mark:   | 26051| Inner Struggle
 |                     | 26052| Hickok's Revenge
 |                     | 26053| On the Lam
 |                     | 26054| My Horse Don't Like Ya, Either
