@@ -1390,5 +1390,5 @@
 |:heavy_check_mark:   | 26056| Unexpected Allies
 |:white_check_mark:   | 26057| Facing Yer Demons (Callout cost increase currently unimplemented)
 |:white_check_mark:   | 26058| STAMPEDE! (Town Square adjacency effect unimplemented)
-|                     | 26059| Against the Odds
+|:heavy_check_mark:   | 26059| Against the Odds
 |                     | 26060| Stand Together
