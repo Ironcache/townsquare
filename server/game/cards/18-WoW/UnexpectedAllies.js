@@ -28,20 +28,23 @@ class UnexpectedAllies extends ActionCard {
                             }, () => {
                                 this.game.resolveGameAction(GameActions.joinPosse({ card: context.target }), context);
                             }), player, context.target);
-                            this.game.resolveGameAction(GameActions.decreaseCasualties({ 
-                                player: player, 
-                                amount: 2
-                            }), context);
-                            this.game.addMessage('{0} uses {1} to have {2} join the posse and suffer 2 less casualties', player, this, context.target);
+                            if(context.player.modifyRank(2, context)) {
+                                this.game.addMessage('{0} uses {1} to have {2} join the posse and increases their hand rank by 2.',
+                                    player, this, context.target);
+                            }
+                            else {
+                                this.game.addMessage('{0} uses {1} to have {2} join the posse, but their hand rank could not be modified.',
+                                    player, this, context.target);
+                            }
                         },
                         onNo: player => {
                             this.game.resolveGameAction(GameActions.addToHand({ card: context.target }), context);
-                            this.game.addMessage('{0} uses {1} to put {2} into their hand', player, this, context.target);
+                            this.game.addMessage('{0} uses {1} to put {2} into their hand.', player, this, context.target);
                         }
                     });
                 } else {
                     this.game.resolveGameAction(GameActions.addToHand({ card: context.target }), context);
-                    this.game.addMessage('{0} uses {1} to put {2} into their hand', context.player, this, context.target);
+                    this.game.addMessage('{0} uses {1} to put {2} into their hand.', context.player, this, context.target);
                 }
             }
         })
