@@ -18,6 +18,10 @@ class Shootout extends Phase {
     constructor(game, phase, leader, mark, options = { isJob: false }) {
         super(game, PhaseNames.Shootout);
         this.round = 0;
+
+        // TODO: Rebrand the "shootout" to be a posse-based phase that includes both jobs and shootouts.
+        this.isInShootoutRounds = false; 
+
         this.highNoonPhase = phase;
         this.options = options;
         this.leader = leader;
@@ -173,6 +177,7 @@ class Shootout extends Phase {
         if(this.checkEndCondition()) {
             return;
         }
+        this.isInShootoutRounds = true;
         this.remainingSteps = [
             new SimpleStep(this.game, () => this.resetForTheRound()),
             new SimpleStep(this.game, () => this.shootoutPlays()),
@@ -257,6 +262,7 @@ class Shootout extends Phase {
         if(this.cancelled) {
             return;
         }
+        this.isInShootoutRounds = false;
         if(!this.isJob()) {
             if((!this.opposingPosse || this.opposingPosse.isEmpty()) &&
                 this.leaderPosse && !this.leaderPosse.isEmpty()) {

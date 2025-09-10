@@ -3,7 +3,7 @@ const DudeCard = require('../../dudecard.js');
 class JoanMcGruder extends DudeCard {
     setupCardAbilities(ability) {
         this.persistentEffect({
-            condition: () => this.game.shootout && this.isParticipating(),
+            condition: () => this.game.shootout && this.game.shootout.isInShootoutRounds && this.isParticipating(),
             match: this,
             effect: [
                 ability.effects.dynamicBullets(() => this.dudesInJoansPosse() * -1),
