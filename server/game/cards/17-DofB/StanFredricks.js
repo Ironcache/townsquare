@@ -8,7 +8,6 @@ class StanFredricks extends DudeCard {
         this.action({
             title: 'Move Bounty',
             playType: ['shootout'],
-            cost: ability.costs.bootSelf(),
             handler: context => {
                 if(this.isWanted()) {
                     context.ability.selectAnotherTarget(context.player, context, {
