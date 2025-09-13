@@ -21,18 +21,18 @@ class RhamsReadings extends DeedCard {
                         } else {
                             this.game.addMessage('{0} uses {1} to reveal {2} which is aced but there are no more cards in {3}\'s draw deck to reveal', 
                                 context.player, this, jokercard, opponent);
+                            return;
                         }
                     });
+                }
+                const topDiscard = opponent.discardPile.length > 0 ? opponent.discardPile[0] : null;
+                if(topDiscard && topDiscard.getType() !== 'joker' && (topCard.suit.toLowerCase() === topDiscard.suit.toLowerCase() || topCard.value === topDiscard.value)) {
+                    context.player.modifyGhostRock(1);
+                    this.game.addMessage('{0} uses {1} to reveal {2} as the top card of {3}\'s deck, and gains 1 GR', 
+                        context.player, this, topCard, opponent);   
                 } else {
-                    const topDiscard = opponent.discardPile.length > 0 ? opponent.discardPile[0] : null;
-                    if(topDiscard && topDiscard.getType() !== 'joker' && (topCard.suit.toLowerCase() === topDiscard.suit.toLowerCase() || topCard.value === topDiscard.value)) {
-                        context.player.modifyGhostRock(1);
-                        this.game.addMessage('{0} uses {1} to reveal {2} as the top card of {3}\'s deck, and gains 1 GR', 
-                            context.player, this, topCard, opponent);   
-                    } else {
-                        this.game.addMessage('{0} uses {1} to reveal {2} as the top card of {3}\'s deck, but does not gain any GR', 
-                            context.player, this, topCard, opponent);                    
-                    }
+                    this.game.addMessage('{0} uses {1} to reveal {2} as the top card of {3}\'s deck, but does not gain any GR', 
+                        context.player, this, topCard, opponent);                    
                 }
             }
         });

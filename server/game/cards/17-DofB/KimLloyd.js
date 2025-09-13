@@ -23,7 +23,7 @@ class KimLloyd extends DudeCard {
                     waitingPromptTitle: 'Waiting for opponent to select target location',
                     cardCondition: { 
                         location: 'play area', 
-                        condition: card => card.isAdjacent(this.gamelocation)
+                        condition: card => card.isAdjacent(this.gamelocation) && card.getType() === 'deed'
                     },
                     cardType: 'deed',
                     onSelect: (player, location) => {

@@ -27,9 +27,11 @@ class Fort51 extends OutfitCard {
         this.action({
             title: 'Noon: Remove Bounty',
             playType: 'noon',
-            cost: ability.costs.boot(card =>
-                card.hasKeyword('gadget') && card.controller === this.controller && !card.isAtHome()
-            ),
+            cost: [
+                ability.costs.bootSelf(),
+                ability.costs.boot(card =>
+                    card.hasKeyword('gadget') && card.controller === this.controller && !card.isAtHome())
+            ],
             target: {
                 activePromptTitle: 'Select a dude',
                 waitingPromptTitle: 'Waiting for opponent to select a dude',
