@@ -19,7 +19,7 @@ class OnTheLam extends ActionCard {
             handler: context => {
                 this.game.resolveGameAction(GameActions.addBounty({ card: context.target }), context);
                 this.game.promptForLocation(context.target.controller, {
-                    activePromptTitle: 'Choose a location to move your dude to from On The Lam.',
+                    activePromptTitle: 'Choose a location to move ' + context.target.title + ' to from On The Lam.',
                     waitingPromptTitle: 'Waiting for opponent to choose destination.',
                     cardCondition: {
                         location: 'play area'
