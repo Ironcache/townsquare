@@ -7,7 +7,6 @@ class Benediction extends SpellCard {
         this.spellAction({
             title: 'Noon: Benediction',
             playType: ['noon'],
-            cost: ability.costs.bootSelf(),
             target: {
                 activePromptTitle: 'Choose another dude',
                 cardCondition: { 

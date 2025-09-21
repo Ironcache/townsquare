@@ -21,20 +21,22 @@ class DakotaKatzeek extends DudeCard {
                             match: { keyword: 'Totem', type: 'spell' },
                             location: ['discard pile'],
                             numToSelect: 1,
-                            message: {
-                                format: '{player} uses {source}, discards {discarded} and searches their discard pile selecting {searchTarget}',
-                                args: { discarded: () => discarded }
-                            },
-                            cancelMessage: {
-                                format: '{player} uses {source}, discards {discarded} and searches their discard pile, but does not find a Totem',
-                                args: { discarded: () => discarded }
-                            },
                             handler: card => {
-                                this.game.resolveStandardAbility(StandardActions.putIntoPlay({
-                                    playType: 'ability',
-                                    abilitySourceType: 'card',
-                                    targetParent: this.locationCard
-                                }), context.player, card);
+                                this.game.promptForYesNo(this.controller, {
+                                    title: 'Do you want to plant the totem?',
+                                    onYes: () => {
+                                        this.game.resolveStandardAbility(StandardActions.putIntoPlay({
+                                            playType: 'ability',
+                                            abilitySourceType: 'card',
+                                            targetParent: this.locationCard
+                                        }), context.player, card);
+                                        this.game.addMessage('{0} uses {1} to plant {2} at {3}.', this.controller, this, card, this.locationCard);
+                                    },
+                                    onNo: () => {
+                                        this.game.resolveGameAction(GameActions.returnCardToHand({ card }), context);
+                                        this.game.addMessage('{0} uses {1} to get {2} from the discard pile to hand.', this.controller, this, card);
+                                    }
+                                });
                             },
                             source: this
                         }),

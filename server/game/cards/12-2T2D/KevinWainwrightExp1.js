@@ -13,7 +13,7 @@ class KevinWainwrightExp1 extends DudeCard {
                 cardCondition: { 
                     location: 'play area', 
                     controller: 'any', 
-                    condition: card => card.uuid !== this.gamelocation &&
+                    condition: card =>
                         (!this.game.shootout || (this.game.shootout.shootoutLocation && this.game.shootout.shootoutLocation.uuid === card.uuid)) &&
                         this.game.getDudesAtLocation(card.uuid,
                             dude => dude.hasOneOfKeywords(['abomination', 'huckster'])).length
@@ -35,7 +35,7 @@ class KevinWainwrightExp1 extends DudeCard {
                 let actionText = '{0} uses {1} to move him to ';
                 if(this.game.shootout) {
                     action = GameActions.joinPosse({ card: this });
-                    actionText += 'posse';
+                    actionText += 'the posse';
                 } else {
                     action = GameActions.moveDude({ 
                         card: this, 
@@ -43,18 +43,17 @@ class KevinWainwrightExp1 extends DudeCard {
                     });
                     actionText += '{2}';
                 }
-                this.game.resolveGameAction(action, context).thenExecute(() => {
-                    this.applyAbilityEffect(context.ability, ability => ({
-                        match: this,
-                        effect: ability.effects.setAsStud()
-                    }));
-                    this.game.addMessage(actionText + ' and make him a stud', context.player, this, this.locationCard);
-                    if(this.game.getNumberOfPlayers() > 1 && 
-                        context.player.getOpponent().getDudesAtLocation(this.gamelocation, dude => dude.getGrit(context) >= 11).length) {
-                        context.player.drawCardsToHand(2, context);
-                        this.game.addMessage('{0} uses {1} to draw 2 cards', context.player, this);
-                    }
-                });
+                this.game.resolveGameAction(action, context);
+                this.applyAbilityEffect(context.ability, ability => ({
+                    match: this,
+                    effect: ability.effects.setAsStud()
+                }));
+                this.game.addMessage(actionText + ' and make him a stud', context.player, this, this.locationCard);
+                if(this.game.getNumberOfPlayers() > 1 && 
+                    context.player.getOpponent().getDudesAtLocation(context.target.gamelocation, dude => dude.getGrit(context) >= 11).length) {
+                    context.player.drawCardsToHand(2, context);
+                    this.game.addMessage('{0} uses {1} to draw 2 cards', context.player, this);
+                }
             }
         });
     }

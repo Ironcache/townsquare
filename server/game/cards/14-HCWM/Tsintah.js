@@ -20,7 +20,7 @@ class Tsintah extends DudeCard {
                 if(!thisLocationCard) {
                     return;
                 }
-                const isAdjacentToHolyGround = thisLocationCard.getType('deed') && this.game.findLocations(card => 
+                const isAdjacentToHolyGround = thisLocationCard.getType() === 'deed' && this.game.findLocations(card => 
                     card.hasKeyword('holy ground') && card.isAdjacent(this.gamelocation)).length > 0;
                 if(thisLocationCard.hasKeyword('holy ground') || isAdjacentToHolyGround) {
                     this.applyAbilityEffect(context.ability, ability => ({
