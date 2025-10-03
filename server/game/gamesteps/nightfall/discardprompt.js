@@ -8,7 +8,7 @@ class DiscardPrompt extends PlayerOrderPrompt {
                     this.game.addMessage('{0} discards {1} as part of Nightfall', this.currentPlayer, this.currentPlayer.hand);
                     this.currentPlayer.discardCards(this.currentPlayer.hand);
                 } else {
-                    this.noDiscard(this.currentPlayer);
+                    this.game.queueSimpleStep(() => this.game.addMessage('{0} does not discard any card as part of Nightfall', this.currentPlayer));
                 }
                 this.completePlayer();
             } else {

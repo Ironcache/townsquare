@@ -1487,8 +1487,8 @@ class Player extends Spectator {
                 context.totalPullValue = totalPullValue;
             }
             if(props.successCondition(totalPullValue)) {
-                this.game.addMessage('{0} pulled {1}of{2} ({3}) as check for {4} and succeeded (total pull value = {5})',
-                    this, pulledValue, pulledSuit, pulledCard, props.source ? props.source : props.chatCommandDiff, totalPullValue);
+                this.game.addMessage('{0}\'s pull checked against {1} succeeded (total pull value = {2})',
+                    this, props.source ? props.source : props.chatCommandDiff, totalPullValue);
                 this.game.raiseEvent('onPullSuccess', Object.assign(props, { pulledValue, pulledSuit, pulledCard }), event => {
                     let isAbility = !!context;
                     const pullInfo = { 
@@ -1508,8 +1508,8 @@ class Player extends Spectator {
                     }
                 });
             } else {
-                this.game.addMessage('{0} pulled {1}of{2} ({3}) as check for {4} and failed (total pull value - {5})',
-                    this, pulledValue, pulledSuit, pulledCard, props.source ? props.source : props.chatCommandDiff, totalPullValue);
+                this.game.addMessage('{0}\'s pull checked against {1} failed (total pull value = {2})',
+                    this, props.source ? props.source : props.chatCommandDiff, totalPullValue);
                 this.game.raiseEvent('onPullFail', Object.assign(props, { pulledValue, pulledSuit, pulledCard }), event => {
                     let isAbility = !!context;
                     const pullInfo = { 
@@ -1529,7 +1529,7 @@ class Player extends Spectator {
                     }
                 });
             }
-        }, false, props);
+        }, true, props);
     }
 
     pullForSkill(difficulty, skillName, properties, context) {

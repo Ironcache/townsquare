@@ -32,7 +32,7 @@ class Search extends GameAction {
 
     canChangeGameState({ context }) {
         const player = this.searchedPlayerFunc(context);
-        return player.drawDeck.length > 0;
+        return player.drawDeck.length > 0 || this.topCards > 0;
     }
 
     createEvent({ context }) {
