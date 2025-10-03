@@ -7,12 +7,12 @@ class SundayBest extends GoodsCard {
     /** @param {AbilityDsl} ability */
     setupCardAbilities(ability) {
         this.whileAttached({
-            condition: () => this.game.currentPhase === PhaseNames.Upkeep,
+            condition: () => this.game.currentPhase === PhaseNames.Production,
             effect: ability.effects.modifyInfluence(3)
         });
         this.reaction({
             title: 'Sunday Best',
-            when: { onPhaseStarted: event => event.phase === PhaseNames.Upkeep },
+            when: { onPhaseStarted: event => event.phase === PhaseNames.Production },
             cost: ability.costs.bootSelf(),
             handler: context => {
                 this.game.promptForLocation(context.player, {

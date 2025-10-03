@@ -1,5 +1,6 @@
 const SetupPhase = require('./setupphase');
 const GamblingPhase = require('./gamblingphase');
+const ProductionPhase = require('./productionphase');
 const UpkeepPhase = require('./upkeepphase');
 const HighNoonPhase = require('./highnoonphase');
 const SundownPhase = require('./sundownphase');
@@ -10,6 +11,7 @@ class Phases {
         this.nameToStepIndex = {
             setup: SetupPhase,
             gambling: GamblingPhase,
+            production: ProductionPhase,
             upkeep: UpkeepPhase,
             highnoon: HighNoonPhase,
             sundown: SundownPhase,
@@ -20,6 +22,7 @@ class Phases {
     names() {
         return [
             'gambling',
+            'production',
             'upkeep',
             'highnoon',
             'sundown',

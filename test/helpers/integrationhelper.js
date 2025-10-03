@@ -8,7 +8,7 @@ const GameFlowWrapper = require('./gameflowwrapper.js');
 
 const ProxiedGameFlowWrapperMethods = [
     'startGame', 'keepStartingPosse', 'skipGrifterPrompt', 'selectFirstPlayer',
-    'completeHighNoonPhase', 'doneHighNoonPhase', 'completeGamblingPhase',
+    'completeHighNoonPhase', 'doneHighNoonPhase', 'completeGamblingPhase', 'completeProductionPhase',
     'completeUpkeepPhase', 'completeShootoutPlaysStep', 'doneShootoutPlaysStep', 
     'completeShootoutResolutionStep', 'doneShootoutResolutionStep', 'drawStartingPosse',
     'skipToHighNoonPhase', 'removeFromPosse', 'discardDrawHand', 'completeShootoutDrawStep',

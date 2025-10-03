@@ -7,7 +7,7 @@ class JaccsFailSafe extends GoodsCard {
     /** @param {AbilityDsl} ability */
     setupCardAbilities(ability) {
         this.whileAttached({
-            condition: () => this.game.currentPhase === PhaseNames.Upkeep,
+            condition: () => this.game.currentPhase === PhaseNames.Upkeep || this.game.currentPhase === PhaseNames.Production,
             effect: [
                 ability.effects.modifyInfluence(2)
             ]

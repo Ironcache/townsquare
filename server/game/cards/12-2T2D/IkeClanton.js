@@ -18,7 +18,7 @@ class IkeClanton extends DudeCard {
                     condition: () => true,
                     match: context.target,
                     effect: ability.effects.addKeyword('rowdy')
-                }), PhaseNames.Upkeep
+                }), PhaseNames.Production
                 );
             }
         });

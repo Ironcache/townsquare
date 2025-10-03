@@ -112,6 +112,10 @@ class GameFlowWrapper {
         }
     }
 
+    completeProductionPhase() {
+        this.guardCurrentPhase('production');
+    }
+
     completeUpkeepPhase() {
         if(this.game.currentPhase !== 'upkeep') {
             return;
