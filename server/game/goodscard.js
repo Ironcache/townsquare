@@ -20,6 +20,14 @@ class GoodsCard extends HeartsCard {
             return false;
         }
 
+        if (this.isTotem() && (
+            !(card.getType === 'deed' || card.getType === 'outfit' || card.getType === 'townsquare') ||
+            !card.controller.equals(player) ||
+            player.getDudesAtLocation(card.gamelocation, dude => !dude.booted && dude.hasKeyword('shaman')).length === 0)
+        ) {
+            return false;
+        }
+
         return true;
     }
 }

@@ -799,6 +799,7 @@ class Player extends Spectator {
         if(updatedParams.context.costs && updatedParams.context.costs.ghostrock !== undefined && updatedParams.context.costs.ghostrock !== null) {
             costText = ', costing ' + updatedParams.context.costs.ghostrock + ' GR';
         }
+        updatedParams.costText = costText;
         switch(card.getType()) {
             case 'spell':
             case 'goods':
@@ -840,14 +841,7 @@ class Player extends Spectator {
                 break;
             case 'deed': {
                 const putIntoPlayFunc = () => {
-                    this.addDeedToStreet(card, updatedParams.target);
-                    if(updatedParams.playingType === PlayingTypes.Shoppin) {
-                        const suffix = (card.hasKeyword('Out of Town') ? 'at out of town location' : 'on their street') + costText;
-                        this.game.addMessage('{0} does Shoppin\' to build {1} {2}', this, card, suffix);
-                    } else if(this.game.currentPhase !== 'setup') {
-                        this.game.addMessage('{0} brings into play deed {1}{2}', this, card, costText);
-                    }
-                    this.entersPlay(card, updatedParams);                    
+                    this.addDeedToStreet(card, updatedParams);       
                 };              
                 if(card.isGadget() && this.game.currentPhase !== 'setup' && updatedParams.playingType !== PlayingTypes.Drop) {
                     this.inventGadget(card, updatedParams.scientist, () => {
@@ -1249,17 +1243,19 @@ class Player extends Spectator {
         return sorted.pop();
     }
 
-    addDeedToStreet(card, target) {
+    addDeedToStreet(card, params) {
         if(card.hasKeyword('Out of Town')) {
             this.locations.push(new Location.GameLocation(this.game, card, null, null));
-        } else if(/left/.test(target)) {
+            this.moveCard(card, 'play area');
+        } else if(/left/.test(params.target)) {
             this.addDeedToLeft(card);
-        } else if(/right/.test(target)) {
+            this.moveCard(card, 'play area');
+        } else if(/right/.test(params.target)) {
             this.addDeedToRight(card);
+            this.moveCard(card, 'play area');
         } else {
-            this.promptForDeedStreetSide(card);
+            this.promptForDeedStreetSide(card, params)
         }
-        this.moveCard(card, 'play area');
     }
 
     addDeedToLeft(card) {
@@ -1321,8 +1317,26 @@ class Player extends Spectator {
         });
     }
 
-    promptForDeedStreetSide(card) {
-        this.game.queueStep(new DeedStreetSidePrompt(this.game, this, card, PlayingTypes.Play));
+    promptForDeedStreetSide(card, params) {
+        this.game.queueStep(new DeedStreetSidePrompt(this.game, this, {
+            deedCard: card,
+            playingType: params.playingType,
+            originalLocation: params.originalLocation,
+            onPlay: () => {
+                if(params.playingType === PlayingTypes.Shoppin) {
+                    const suffix = (card.hasKeyword('Out of Town') ? 'at out of town location' : 'on their street') + params.costText;
+                    this.game.addMessage('{0} does Shoppin\' to build {1} {2}', this, card, suffix);
+                } else if(this.game.currentPhase !== 'setup') {
+                    this.game.addMessage('{0} brings into play deed {1}{2}', this, card, params.costText);
+                }
+                this.moveCard(card, 'play area');
+                this.entersPlay(card, params);  
+            },
+            onCancel: () => {
+                this.game.addMessage('{0} cancelled a building prompt.', this);
+                this.game.addAlert('warning', 'Cancelling building does not reset turn order; ensure current acting player is correct.')
+            }
+        }));
     }
 
     inPlayLocation(target) {

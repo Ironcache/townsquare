@@ -5,7 +5,7 @@ const StandardActions = require('../../PlayActions/StandardActions.js');
 class JohnAcesRadcliffeExp1 extends DudeCard {
     setupCardAbilities(ability) {
         this.persistentEffect({
-            condition: () => this.hasAttachmentWithKeywords(['gadget'], ['weapon']),
+            condition: () => this.hasAttachmentWithKeywords(['gadget', 'weapon']),
             match: this,
             effect: ability.effects.setAsStud()
         });

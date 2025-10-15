@@ -5,7 +5,17 @@ class PostATron extends DudeCard {
         super(owner, cardData);
         this.game.onceConditional('onSetupDrawDeckShuffled', { condition: event => event.player === this.owner }, () => {
             if(this.location === 'play area') {
-                this.owner.inventGadget(this);
+                this.game.promptForSelect(this.owner, {
+                    activePromptTitle: 'Select a dude to make Post-A-Tron',
+                    waitingPromptTitle: 'Waiting for opponent to select dude to make Post-A-Tron',
+                    cardCondition: card => card.location === 'play area' &&
+                        card.controller.equals(this.owner) && !card.booted && card.hasKeyword('mad scientist'),
+                    cardType: 'dude',
+                    onSelect: (player, card) => {
+                        player.pullToInvent(card, this, () => true);
+                        return true;
+                    }
+                });
             }
         });
     }

@@ -1,11 +1,14 @@
 const MenuPrompt = require('./menuprompt.js');
 
 class DeedStreetSidePrompt extends MenuPrompt {
-    constructor(game, player, deedCard, playingType) {
-        super(game, player, deedCard, playingType);
+    constructor(game, player, properties) {
+        super(game, player, properties.deedCard, properties.playingType);
         this.player = player;
-        this.deedCard = deedCard;
-        this.playingType = playingType;
+        this.deedCard = properties.deedCard;
+        this.playingType = properties.playingType;
+        this.originalLocation = properties.originalLocation;
+        this.onPlay = properties.onPlay || (() => true);
+        this.onCancel = properties.onCancel || (() => true);
     }
 
     continue() {
@@ -20,11 +23,12 @@ class DeedStreetSidePrompt extends MenuPrompt {
         } else {
             let leftButton = { text: 'Left', method: 'leftSide', arg: ''};
             let rightButton = { text: 'Right', method: 'rightSide', arg: ''};
+            let cancelButton = { text: 'Cancel', method: 'cancel', arg: ''};
         
             this.game.promptWithMenu(this.player, this, {
                 activePrompt: {
                     menuTitle: 'Place ' + this.context.title + ' on Left/Right?',
-                    buttons: [leftButton, rightButton]
+                    buttons: [leftButton, rightButton, cancelButton]
                 },
                 source: this.context
             });
@@ -33,11 +37,19 @@ class DeedStreetSidePrompt extends MenuPrompt {
 
     leftSide() {
         this.player.addDeedToLeft(this.context);
+        this.onPlay();
         return true;
     }
 
     rightSide() {
         this.player.addDeedToRight(this.context);
+        this.onPlay();
+        return true;
+    }
+
+    cancel() {
+        this.player.moveCard(this.deedCard, this.originalLocation);
+        this.onCancel();
         return true;
     }
 }

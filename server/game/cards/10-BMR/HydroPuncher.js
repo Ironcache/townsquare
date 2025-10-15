@@ -31,7 +31,7 @@ class HydroPuncher extends GoodsCard {
                         activePromptTitle: 'Choose an attachment',
                         waitingPromptTitle: 'Waiting for opponent to choose an attachment',
                         cardCondition: card => card.parent === context.target,
-                        cardType: ['goods', 'spell'],
+                        cardType: ['goods', 'spell', 'action'],
                         onSelect: (player, card) => {
                             this.game.resolveGameAction(GameActions.bootCard({ card: card }), context).thenExecute(() =>
                                 this.game.addMessage('{0} boots also {1} as result of {3}', player, card, this));

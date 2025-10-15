@@ -17,7 +17,7 @@ class BadBeat extends ActionCard {
                     opponent.drawDeckAction(5, card => opponent.moveCardWithContext(card, 'draw hand', context));
                     opponent.drawHandRevealed = true;
                     opponent.drawHandSelected = true;
-                    opponent.determineHandResult('\'s hand has been changed to', true);
+                    opponent.determineHandResult('\'s hand has been changed to');
                     if(opponent.isCheatin()) {
                         const amountToPay = opponent.getSpendableGhostRock() > 2 ? 2 : opponent.getSpendableGhostRock();
                         if(amountToPay) {
