@@ -15,8 +15,8 @@ class PetuniaMallard extends DudeCard {
         
         const posse = this.game.shootout.getPosseByPlayer(this.controller);
 
-        if(posse) {
-            const highest = posse.getDudes().map(dude => dude.bullets).reduce((a, b) => { return Math.max(a, b) });
+        if(posse && posse.getDudes().length > 0) {
+            const highest = posse.getDudes().map(dude => dude.bullets).reduce((a, b) => { return Math.max(a, b) }, 0);
             return highest;
         }
         return 0;
