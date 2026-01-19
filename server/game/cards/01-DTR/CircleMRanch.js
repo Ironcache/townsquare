@@ -5,10 +5,8 @@ class CircleMRanch extends DeedCard {
         this.action({
             title: 'Circle M Ranch',
             playType: ['noon'],
+            condition: context => context.player.hand.length <= 3,
             cost: ability.costs.bootSelf(),
-            ifCondition: context => context.player.hand.length <= 3,
-            ifFailMessage: context =>
-                this.game.addMessage('{0} uses {1}, but does not draw a card because their hand is bigger than 3 cards', context.player, this),
             message: context =>
                 this.game.addMessage('{0} uses {1} to draw a card', context.player, this),
             handler: context => {

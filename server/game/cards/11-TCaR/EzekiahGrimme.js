@@ -11,7 +11,7 @@ class EzekiahGrimme extends LegendCard {
                 ability.effects.increaseCost({
                     playingTypes: ['shoppin', 'ability'],
                     amount: card => this.getNumOfCopiesInPlay(card),
-                    match: card => card.getType() === 'spell'               
+                    match: card => card.getType() === 'spell' && card.controller.equals(this.controller)
                 })
             ]
         });
@@ -93,19 +93,8 @@ class EzekiahGrimme extends LegendCard {
         });
     }
 
-    getNumOfCopiesInPlay(spell, player) {
-        let players = this.game.getPlayers();
-        if(player) {
-            players = [player];
-        }
-        return players.reduce((totalAmount, player) => {
-            return totalAmount += player.cardsInPlay.reduce((amount, card) => {
-                if(card.title === spell.title) {
-                    return amount + 1;
-                }
-                return amount;
-            }, 0);
-        }, 0);
+    getNumOfCopiesInPlay(spell) {
+        return this.game.filterCardsInPlay(card => card.title === spell.title && card.controller.equals(this.controller)).length;
     }
 }
 

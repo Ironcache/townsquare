@@ -14,7 +14,7 @@ class HidingInTheShadows extends ActionCard {
                 this.game.addMessage('{0} uses {1} to hide {2}', context.player, this, context.target),
             handler: context => {
                 this.applyAbilityEffect(context.ability, ability => ({
-                    match: context.target,
+                    match: card => card === context.target || card.parent === context.target,
                     effect: [
                         ability.effects.cannotBeTargetedByShootout('opponent'),
                         ability.effects.cannotBeAffectedByShootout('opponent')

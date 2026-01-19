@@ -7,10 +7,8 @@ class ClantonRanch extends DeedCard {
         this.action({
             title: 'Noon: Clanton Ranch',
             playType: ['noon'],
+            condition: () => !this.controller.firstPlayer,
             cost: ability.costs.bootSelf(),
-            ifCondition: () => !this.controller.firstPlayer,
-            ifFailMessage: context =>
-                this.game.addMessage('{0} uses {1}, but it fails because they are the Dealer (first player)', context.player, this),
             message: context => this.game.addMessage('{0} uses {1} to gain 1 GR', context.player, this),
             handler: context => {
                 context.player.modifyGhostRock(1);
