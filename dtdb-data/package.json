@@ -1,10 +1,10 @@
 {
-  "name": "townsquare-json-data",
+  "name": "dtdb-data",
   "version": "1.0.0",
-  "description": "Card data for The Iron Throne",
+  "description": "Card data for townsquare",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmeldo/townsquare-json-data"
+    "url": "https://github.com/mmeldo/dtdb-data"
   },
   "license": "MIT",
   "scripts": {
