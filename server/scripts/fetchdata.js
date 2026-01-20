@@ -12,7 +12,7 @@ const CardService = require('../services/CardService.js');
 
 const optionsDefinition = [
     { name: 'card-source', type: String, defaultValue: 'json' },
-    { name: 'card-dir', type: String, defaultValue: path.join(__dirname, '..', '..', 'townsquare-json-data') },
+    { name: 'card-dir', type: String, defaultValue: path.join(__dirname, '..', '..', 'dtdb-data') },
     { name: 'image-source', type: String, defaultValue: 'dtdb' },
     { name: 'image-dir', type: String, defaultValue: path.join(__dirname, '..', '..', 'public', 'img', 'cards') },
     { name: 'no-images', type: Boolean, defaultValue: false },

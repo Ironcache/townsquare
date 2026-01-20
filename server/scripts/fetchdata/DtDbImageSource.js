@@ -11,7 +11,7 @@ class DtDbImageSource {
     }
 
     loadPacks(onlyPack, exceptPack) {
-        let files = fs.readdirSync('townsquare-json-data/packs');
+        let files = fs.readdirSync('dtdb-data/packs');
 
         if (onlyPack) 
             files = files.find(file => file === onlyPack + '.json');
@@ -19,7 +19,7 @@ class DtDbImageSource {
         if (exceptPack)
             files = files.filter(file => file !== exceptPack + '.json');
 
-        return files.map(file => JSON.parse(fs.readFileSync('townsquare-json-data/packs/' + file)));
+        return files.map(file => JSON.parse(fs.readFileSync('dtdb-data/packs/' + file)));
     }
 
     fetchImage(card, imagePath) {

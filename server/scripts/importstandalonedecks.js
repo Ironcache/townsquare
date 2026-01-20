@@ -30,7 +30,7 @@ class ImportStandaloneDecks {
     }
 
     loadDecks() {
-        let data = fs.readFileSync(path.join(__dirname, '../../townsquare-json-data/standalone-decks.json'));
+        let data = fs.readFileSync(path.join(__dirname, '../../dtdb-data/standalone-decks.json'));
         return JSON.parse(data);
     }
 }

@@ -52,7 +52,7 @@ class CardService {
 
     getRestrictedList() {
         return new Promise((resolve, reject) => {
-            fs.readFile(path.join(__dirname, '../../townsquare-json-data/restricted-list.json'), (err, data) => {
+            fs.readFile(path.join(__dirname, '../../dtdb-data/restricted-list.json'), (err, data) => {
                 if(err) {
                     return reject(err);
                 }

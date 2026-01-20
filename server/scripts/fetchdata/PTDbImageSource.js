@@ -14,7 +14,7 @@ class PTDbImageSource {
   }
 
   loadPacks(onlyPack, exceptPack) {
-    let files = fs.readdirSync('townsquare-json-data/packs');
+    let files = fs.readdirSync('dtdb-data/packs');
     
     if (onlyPack) {
       return files.find(file => file === onlyPack + '.json');
@@ -22,7 +22,7 @@ class PTDbImageSource {
 
     if (exceptPack) {
       files = files.filter(file => file !== exceptPack + '.json');      
-      return files.map(file => JSON.parse(fs.readFileSync('townsquare-json-data/packs/' + file)));
+      return files.map(file => JSON.parse(fs.readFileSync('dtdb-data/packs/' + file)));
     }
 
     return null;

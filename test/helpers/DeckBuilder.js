@@ -5,7 +5,7 @@ const path = require('path');
 
 const {matchCardByNameAndPack} = require('./cardutil.js');
 
-const PathToSubModulePacks = path.join(__dirname, '../../townsquare-json-data/packs');
+const PathToSubModulePacks = path.join(__dirname, '../../dtdb-data/packs');
 
 const DefaultDeck = [
     'Jackson\'s Strike', 'Jackson\'s Strike', 

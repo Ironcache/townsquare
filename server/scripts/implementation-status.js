@@ -15,7 +15,7 @@ if(!packCode) {
     process.exit(1);
 }
 
-const pathToData = process.argv[3] || path.join(__dirname, '../../townsquare-json-data');
+const pathToData = process.argv[3] || path.join(__dirname, '../../dtdb-data');
 const packData = JSON.parse(fs.readFileSync(path.join(pathToData, 'packs', packCode + '.json')));
 const implementedCards = require('../game/cards');
 

@@ -11,7 +11,7 @@ MongoClient.connect(url, async function(err, db) {
         throw err;
     }
     var dbo = db.db('townsquare');
-    var decks = await loadDeckFiles('c:\\Melo\\GitHub\\townsquare\\townsquare-json-data\\');
+    var decks = await loadDeckFiles('c:\\Melo\\GitHub\\townsquare\\dtdb-data\\');
 
     _.each(decks, deck => {
         dbo.collection('decks').insertOne(deck, function(err) {
